@@ -1,0 +1,22 @@
+{
+  "name": "clasp-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.ts",
+  "scripts": {
+    "push": "clasp push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mp3/clasp-boilerplate.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mp3/clasp-boilerplate/issues"
+  },
+  "homepage": "https://github.com/mp3/clasp-boilerplate#readme",
+  "devDependencies": {
+    "@google/clasp": "^2.0.1",
+    "@types/google-apps-script": "^0.0.38"
+  }
+}
