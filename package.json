@@ -4,7 +4,9 @@
   "description": "",
   "main": "src/main.ts",
   "scripts": {
-    "push": "clasp push"
+    "push": "clasp push",
+    "lint": "tslint --project '.' --fix",
+    "watch": "tslint --project '.' --fix --watch"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,10 @@
   "homepage": "https://github.com/mp3/clasp-boilerplate#readme",
   "devDependencies": {
     "@google/clasp": "^2.0.1",
-    "@types/google-apps-script": "^0.0.38"
+    "@types/google-apps-script": "^0.0.38",
+    "prettier": "^1.16.4",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1"
   }
 }
