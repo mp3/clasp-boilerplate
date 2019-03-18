@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "rulesDirectory": [
+    "tslint-plugin-prettier"
+  ],
+  "rules": {
+    "interface-name": false,
+    "jsx-no-lambda": false,
+    "no-implicit-dependencies": false,
+    "no-submodule-imports": false,
+    "prefer-const": true,
+    "prettier": [
+      true, {
+        "singleQuote": true,
+        "semi": false,
+        "jsxBracketSameLine": false
+      }
+    ]
+  }
+}
