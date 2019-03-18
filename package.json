@@ -6,8 +6,7 @@
   "scripts": {
     "clasp-init": "clasp create --rootDir src",
     "push": "clasp push",
-    "lint": "tslint --project '.' --fix",
-    "watch": "tslint --project '.' --fix --watch"
+    "lint": "tslint --project '.' --fix"
   },
   "repository": {
     "type": "git",
