@@ -6,7 +6,7 @@
   "scripts": {
     "clasp:init": "clasp create --rootDir src",
     "clasp:push": "clasp push",
-    "lint": "tslint --project '.' --fix"
+    "lint": "eslint --fix '**/*.ts'"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,52 @@
   },
   "homepage": "https://github.com/mp3/clasp-boilerplate#readme",
   "devDependencies": {
-    "@google/clasp": "^2.0.1",
-    "@types/google-apps-script": "^0.0.38",
-    "prettier": "^1.16.4",
-    "tslint": "^5.14.0",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-plugin-prettier": "^2.0.1"
+    "@google/clasp": "~2.0.1",
+    "@types/google-apps-script": "~0.0.38",
+    "@typescript-eslint/eslint-plugin": "~1.9.0",
+    "eslint": "~5.16.0",
+    "eslint-config-prettier": "~4.3.0",
+    "eslint-plugin-googleappsscript": "~1.0.2",
+    "eslint-plugin-prettier": "~3.1.0",
+    "prettier": "~1.17.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "@typescript-eslint",
+      "googleappsscript",
+      "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "sourceType": "module",
+      "project": "./tsconfig.json"
+    },
+    "env": {
+      "googleappsscript/googleappsscript": true,
+      "jest": true
+    },
+    "rules": {
+      "prefer-const": "error",
+      "prefer-arrow-callback": "error",
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/indent": "off",
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/explicit-member-accessibility": "off",
+      "@typescript-eslint/prefer-interface": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "semi": false
+        }
+      ]
+    }
   }
 }
