@@ -4,8 +4,8 @@
   "description": "",
   "main": "src/main.ts",
   "scripts": {
-    "clasp-init": "clasp create --rootDir src",
-    "push": "clasp push",
+    "clasp:init": "clasp create --rootDir src",
+    "clasp:push": "clasp push",
     "lint": "tslint --project '.' --fix"
   },
   "repository": {
