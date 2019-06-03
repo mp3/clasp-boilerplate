@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/mp3/clasp-boilerplate#readme",
   "devDependencies": {
-    "@google/clasp": "~2.0.1",
-    "@types/google-apps-script": "~0.0.38",
+    "@google/clasp": "~2.1.0",
+    "@types/google-apps-script": "~0.0.53",
     "@typescript-eslint/eslint-plugin": "~1.9.0",
     "eslint": "~5.16.0",
     "eslint-config-prettier": "~4.3.0",
