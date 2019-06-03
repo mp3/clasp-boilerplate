@@ -14,7 +14,7 @@ const askProjectName = async () => {
 }
 
 const copyFromBaseDir = async (dest: string) => {
-  await cpx.copy('./base/*', `./projects/${dest}`)
+  await cpx.copy('./base/{*,.*}', `./projects/${dest}`)
   await cpx.copy('./base/src/*', `./projects/${dest}/src`)
 }
 
