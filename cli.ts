@@ -1,7 +1,7 @@
 import * as inquirer from 'inquirer'
 import * as cpx from 'cpx'
 
-const getName = async () => {
+const getProjectName = async () => {
   const name = 'New project name'
   const question: inquirer.Question = {
     name,
@@ -19,6 +19,6 @@ const copyFromBaseDir = async (dest: string) => {
 }
 
 (async () => {
-  const name = await getName()
-  await copyFromBaseDir(name)
+  const projectName = await getProjectName()
+  await copyFromBaseDir(projectName)
 })()
