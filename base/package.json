@@ -4,8 +4,7 @@
   "description": "",
   "main": "src/main.ts",
   "scripts": {
-    "clasp:create": "clasp create --rootDir src",
-    "clasp:push": "clasp push",
+    "create": "clasp create --rootDir ./src",
     "lint": "eslint --fix '**/*.ts'"
   },
   "repository": {
