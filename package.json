@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/main.ts",
   "scripts": {
-    "copy": "cpx \"./base/**/*\" ./projects/new"
+    "new": "yarn ts-node cli.ts"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,12 @@
   },
   "homepage": "https://github.com/mp3/clasp-boilerplate#readme",
   "devDependencies": {
-    "cpx": "~1.5.0"
+    "@types/cpx": "^1.5.0",
+    "@types/inquirer": "^6.0.3",
+    "@types/node": "^12.0.4",
+    "cpx": "~1.5.0",
+    "inquirer": "^6.3.1",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.5.1"
   }
 }
