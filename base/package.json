@@ -5,7 +5,8 @@
   "main": "src/main.ts",
   "scripts": {
     "create": "clasp create --rootDir ./src",
-    "lint": "eslint --fix '**/*.ts'"
+    "lint": "eslint --fix '**/*.ts'",
+    "test": "jest --silent --verbose"
   },
   "repository": {
     "type": "git",
@@ -19,12 +20,15 @@
   "devDependencies": {
     "@google/clasp": "~2.1.0",
     "@types/google-apps-script": "~0.0.53",
+    "@types/jest": "^24.0.13",
     "@typescript-eslint/eslint-plugin": "~1.9.0",
     "eslint": "~5.16.0",
     "eslint-config-prettier": "~4.3.0",
     "eslint-plugin-googleappsscript": "~1.0.2",
     "eslint-plugin-prettier": "~3.1.0",
-    "prettier": "~1.17.1"
+    "jest": "^24.8.0",
+    "prettier": "~1.17.1",
+    "ts-jest": "^24.0.2"
   },
   "eslintConfig": {
     "extends": [
@@ -64,5 +68,19 @@
         }
       ]
     }
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
